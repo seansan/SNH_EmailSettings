@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SNH_EmailSettings>
+            <version>0.1.0</version>
+        </SNH_EmailSettings>
+    </modules>
+
+	<global>
+		<helpers>
+			<emailsettings>
+				<class>SNH_EmailSettings_Helper</class>
+			</emailsettings>
+		</helpers>    
+	
+		<models>
+            <emailsettings>
+                <class>SNH_Emailsettings_Model</class>
+				<!-- Mage::getModel('emailsettings/template') -->
+            </emailsettings>
+		</models>
+	
+	</global>	
+
+       
+
+    <admin>
+    </admin>
+
+
+	<default>
+		<snh>
+			<emailsettings>               
+				<headerbgclr>SteelBlue</headerbgclr>
+				<headerlogo>false</headerlogo>
+				<headerfnt>'Arial Black',arial,sans-serif</headerfnt>
+				<mainfntclr>DarkSlateGray</mainfntclr>
+				<mainlnkclr>Sienna</mainlnkclr>
+				<mainfnt>arial,verdana,sans-serif</mainfnt>
+			</emailsettings>       
+		</snh>
+	</default>
+
+
+
+	<adminhtml>
+	<acl>
+	<resources>
+		<admin>
+			<children>
+				<system>
+					<children>
+						<config>
+							<children>
+								<snh translate="title" module="emailsettings">
+									<title>SNH Settings section</title>
+								</snh>
+							</children>
+						</config>
+					</children>
+				</system>
+			</children>
+		</admin>
+	</resources>
+	</acl>
+	</adminhtml>
+
+
+</config>
+

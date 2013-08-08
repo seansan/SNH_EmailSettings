@@ -1,0 +1,92 @@
+<config>
+    <sections>
+        <snh translate="label" module="emailsettings">
+            <label>SNH Settings</label>
+            <tab>general</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <emailsettings translate="label">
+                    <label>Transactional email variables</label>
+					<comment><![CDATA[<p>This extension gives you some variables that can be used in transactional emails. It depends on a template that is loaded that references these variables. If you use this style throughout your newsletter and transactional emails then the advantage is that you can quickly change between fonts and colours. For example to set a font and colour per store or store view.</p>
+					<p>The templates are deliverd as-is and can be accessed through transactional emails (name starting with SNH_). They have been tested with iPhone and iPad and are kept basic. you can use these templates as a basis for any language view or store type, or create your own (please share with us on github).</p>]]></comment>
+					<frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+
+						<headerlogo translate="label">
+							<label>Show header logo</label>
+							<comment><![CDATA[Use {{config path='snh/emailsettings/headerlogo'}}<br />
+							Show logo as top header (on) or store name (off).]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</headerlogo>
+
+						<headerfnt translate="label">
+							<label>Header font</label>
+							<comment><![CDATA[Use {{config path='snh/emailsettings/headerfnt'}}.]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>11</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</headerfnt>
+
+						<headerbgclr translate="label">
+							<label>Main colour for bars</label>
+							<comment><![CDATA[Use {{config path='snh/emailsettings/headerbgclr'}}.<br />
+							Also used for H2 headers for contrast]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>12</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</headerbgclr>
+						
+
+
+						<mainfntclr translate="label">
+							<label>Main font colour</label>
+							<comment>Use {{config path='snh/emailsettings/mainfntclr'}}</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</mainfntclr>
+
+						<mainlnkclr translate="label">
+							<label>Main link colour</label>
+							<comment>Use {{config path='snh/emailsettings/mainlnkclr'}}</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>21</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</mainlnkclr>
+
+						<mainfnt translate="label">
+							<label>Main font</label>
+							<comment>Use {{config path='snh/emailsettings/mainfnt'}}</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>22</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</mainfnt>
+                    </fields>
+                </emailsettings>
+             </groups>
+        </snh>
+    </sections>
+</config>
